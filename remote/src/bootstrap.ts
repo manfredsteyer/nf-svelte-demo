@@ -1,8 +1,12 @@
 // @ts-ignore
 import App from './App.svelte';
 
-const app = new App({
-	target: document.getElementById('app'),
-});
+class SvelteMfe extends HTMLElement {
+	connectedCallback() {
+		new App({
+			target: this,
+		});
+	}
+}
 
-export default app;
+customElements.define('svelte-mfe', SvelteMfe);

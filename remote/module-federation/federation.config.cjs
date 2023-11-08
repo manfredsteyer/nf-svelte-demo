@@ -4,9 +4,9 @@ const {
 } = require("@softarc/native-federation/build");
 
 module.exports = withNativeFederation({
-  name: "remote",
+  name: "svelte-mfe",
   exposes: {
-    "./remote-app": "./src/App.svelte"
+    "./web-components": "./src/bootstrap.ts"
   },
   shared: {
     ...shareAll({
