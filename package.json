@@ -9,6 +9,7 @@
 		"dev:host": "npm --prefix ./host run dev",
 		"dev:remote": "npm --prefix ./remote run dev",
 		"dev": "run-p dev:*",
+		"build": "npm run build:remote",
 		"build:host": "npm --prefix ./host run build",
 		"build:remote": "npm --prefix ./remote run build",
 		"preview:host": "npm --prefix ./host run build && npm --prefix ./host run preview",
