@@ -11,7 +11,7 @@
 
 <div id="container">
     <div>
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/svelte-icon.png" width="50">
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/svelte-icon.png" alt="svelte" width="50">
     </div>
     <h1>Select an Upgrade</h1>
     <div>
@@ -57,9 +57,5 @@ button:active {
 #container {
     border: 2px orange dashed;
     padding: 20px;
-}
-
-.top-nav {
-    margin-bottom: 20px;
 }
 </style>
