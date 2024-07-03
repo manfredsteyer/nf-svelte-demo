@@ -4,9 +4,8 @@
 
 	let remoteAppTarget;
 	(async () => {
-		await loadRemoteModule('remote', './web-components');
-		const ce = document.createElement('svelte-mfe');
-		document.body.appendChild(ce);
+		const app = await loadRemoteModule('remote', './remote-app');
+		new app.default({ target: remoteAppTarget });
 	})();
 
 	of('emit')

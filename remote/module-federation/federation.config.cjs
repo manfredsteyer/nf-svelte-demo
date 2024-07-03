@@ -6,7 +6,7 @@ const {
 module.exports = withNativeFederation({
   name: "svelte-mfe",
   exposes: {
-    "./web-components": "./src/bootstrap.ts"
+    "./remote-app": "./src/App.svelte"
   },
   shared: {
     ...shareAll({
